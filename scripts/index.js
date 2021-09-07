@@ -1,9 +1,9 @@
 const MAX_CAR_SERVICES_SLIDES = 3;
 
-let sliderIndex = 0;
+let servicesSliderIndex = 0;
 
 function updateSliderIndex(index) {
-   sliderIndex = index;
+   servicesSliderIndex = index;
 }
 
 function moveSliderTo(index) {
@@ -39,18 +39,18 @@ function moveSliderTo(index) {
 }
 
 function startCarServicesSlider() {
-   moveSliderTo(sliderIndex);
+   moveSliderTo(servicesSliderIndex);
 
    setInterval(() => {
-      if (sliderIndex < 0) {
-         sliderIndex = MAX_CAR_SERVICES_SLIDES - 1;
-      } else if (sliderIndex >= MAX_CAR_SERVICES_SLIDES - 1) {
-         sliderIndex = 0;
+      if (servicesSliderIndex < 0) {
+         servicesSliderIndex = MAX_CAR_SERVICES_SLIDES - 1;
+      } else if (servicesSliderIndex >= MAX_CAR_SERVICES_SLIDES - 1) {
+         servicesSliderIndex = 0;
       } else {
-         sliderIndex += 1;
+         servicesSliderIndex += 1;
       }
 
-      moveSliderTo(sliderIndex);
+      moveSliderTo(servicesSliderIndex);
    }, 5000);
 }
 
