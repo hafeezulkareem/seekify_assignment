@@ -18,18 +18,18 @@ a:hover {
    color: var(--button-hover-color);
 }
 
-.btn {
+button {
    background-color: transparent;
    border: none;
    padding: 12px;
    cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
    color: var(--button-hover-color);
 }
 
-.btn:disabled {
+button:disabled {
    opacity: 0.5;
    cursor: not-allowed;
 }
