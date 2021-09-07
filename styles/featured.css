@@ -46,7 +46,6 @@
 .featured-slides-container {
    display: flex;
    margin: 32px 12px 0 12px;
-   transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .featured-slide {
