@@ -9,6 +9,7 @@
 
 .why-revv.sub-section {
    display: flex;
+   justify-content: space-between;
    margin-top: 24px;
 }
 
@@ -19,7 +20,6 @@
 .why-revv.card {
    width: 360px;
    height: 200px;
-   margin-right: 32px;
    box-shadow: black 0px 5px 5px 1px, rgb(0 0 0 / 12%) 0px 1px 4px;
    background-size: cover;
    position: relative;
