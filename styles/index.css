@@ -1,5 +1,5 @@
 :root {
-   --button-hover-color: #0ebaba;
+   --primary-color: #0ebaba;
    --container-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
 }
 
@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-   color: var(--button-hover-color);
+   color: var(--primary-color);
 }
 
 button {
@@ -27,7 +27,7 @@ button {
 }
 
 button:hover {
-   color: var(--button-hover-color);
+   color: var(--primary-color);
 }
 
 button:disabled {

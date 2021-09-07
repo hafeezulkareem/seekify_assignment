@@ -31,7 +31,7 @@
    color: white;
    font-size: 24px;
    border-radius: 100%;
-   background-color: var(--button-hover-color);
+   background-color: var(--primary-color);
    margin-right: 8px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .footer.page-link:hover {
-   color: var(--button-hover-color);
+   color: var(--primary-color);
 }
 
 .footer.page-link:first-child {
@@ -87,7 +87,7 @@
 .footer.contact-us-button {
    width: fit-content;
    padding: 0;
-   color: var(--button-hover-color);
+   color: var(--primary-color);
    font-size: 22px;
    margin-top: 16px;
 }
@@ -98,7 +98,7 @@
 
 .footer.phone-number,
 .footer.mail-address {
-   color: var(--button-hover-color);
+   color: var(--primary-color);
    font-size: 18px;
    margin-top: 12px;
 }

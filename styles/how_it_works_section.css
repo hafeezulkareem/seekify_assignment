@@ -41,7 +41,7 @@
 
 .how-it-works.inner-icon-container:hover {
    transform: scale(1.3);
-   background-color: var(--button-hover-color);
+   background-color: var(--primary-color);
 }
 
 @-webkit-keyframes rotate {
