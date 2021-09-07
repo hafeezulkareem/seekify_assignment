@@ -35,9 +35,140 @@
 .rental-details-container {
    width: 530px;
    height: 480px;
+   display: flex;
+   flex-direction: column;
    border-radius: 4px;
    background-color: white;
    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+   padding: 30px;
+}
+
+.rental-details-container .buttons-container {
+   display: flex;
+}
+
+.rentals-button,
+.subscription-button {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 47.5%;
+   border-radius: 15px;
+}
+
+.rentals-button {
+   margin-right: 5%;
+   color: white;
+   background-image: linear-gradient(270deg, #1caba2 25%, #1c7fab);
+}
+
+.subscription-button {
+   border: 1px solid gray;
+}
+
+.rentals-button:hover {
+   color: white;
+}
+
+.subscription-button:hover {
+   color: black;
+}
+
+.rentals-button-title,
+.subscription-button-title {
+   font-size: 18px;
+}
+
+.rentals-button-description,
+.subscription-button-description {
+   margin-top: 4px;
+   font-size: 16px;
+}
+
+.service-title-and-description-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 42px;
+}
+
+.service-title {
+   height: 28px;
+}
+
+.service-description {
+   margin-top: 12px;
+   font-size: 18px;
+   color: gray;
+}
+
+.selector-container {
+   display: flex;
+}
+
+.icon-container {
+   align-self: flex-end;
+}
+
+.service-icon {
+   width: 24px;
+}
+
+.selector-container-with-label {
+   margin-left: 12px;
+   width: 100%;
+}
+
+.label {
+   text-transform: uppercase;
+   color: gray;
+}
+
+.inner-selector-container {
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   border-bottom: 2px solid gray;
+   padding-bottom: 12px;
+   margin-top: 12px;
+}
+
+.service-placeholder {
+   font-size: 20px;
+   font-weight: bold;
+   color: lightgray;
+}
+
+.selector-container.date {
+   margin-top: 32px;
+}
+
+.selector-container-with-label.date {
+   display: flex;
+}
+
+.inner-selector-container.date {
+   width: 47.5%;
+}
+
+.inner-selector-container.date:first-child {
+   margin-right: 5%;
+}
+
+.search-button {
+   width: 270px;
+   height: 48px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   border-radius: 4px;
+   margin-top: 32px;
+   align-self: center;
+   background-image: linear-gradient(270deg, #1caba2 25%, #1c7fab);
+}
+
+.search-button:hover {
+   color: white;
 }
 
 .car-services-slider .slider-right-section {

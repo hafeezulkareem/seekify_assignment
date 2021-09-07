@@ -29,6 +29,11 @@ a:hover {
    color: var(--button-hover-color);
 }
 
+.btn:disabled {
+   opacity: 0.5;
+   cursor: not-allowed;
+}
+
 .bold {
    font-weight: bold;
 }
