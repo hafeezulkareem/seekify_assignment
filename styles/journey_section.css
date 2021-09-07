@@ -1,0 +1,31 @@
+.journey-section {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 64px 0;
+   background-color: rgb(247, 247, 247);
+}
+
+.journey.title {
+   font-size: 24px;
+}
+
+.journey.title span {
+   color: gray;
+}
+
+.stats-container {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 32px;
+}
+
+.stat-title {
+   font-size: 18px;
+   margin-top: 16px;
+}
+
+.stat-description {
+   font-size: 14px;
+   margin-top: 8px;
+}
