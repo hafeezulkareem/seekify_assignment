@@ -72,12 +72,31 @@ const featuredPreviousButton = querySelector(
    ".featured-section.previous-button"
 );
 const featuredNextButton = querySelector(".featured-section.next-button");
-let featuredSliderIndex = 0;
+let featuredSliderIndex = 0,
+   featuredSliderTimer;
+
+function addEndFeaturedSlideAtFront() {
+   const featuredSlidesContainer = querySelector(".featured-slides-container");
+   const featuredSlides = querySelectorAll(".featured-slide");
+   const firstSlide = featuredSlides[0];
+   const lastSlide = featuredSlides[featuredSlides.length - 1];
+   lastSlide.remove();
+   featuredSlidesContainer.insertBefore(lastSlide, firstSlide);
+}
+
+function addFrontFeaturedSlideAtEnd() {
+   const featuredSlidesContainer = querySelector(".featured-slides-container");
+   const featuredSlides = querySelectorAll(".featured-slide");
+   const firstSlide = featuredSlides[0];
+   firstSlide.remove();
+   featuredSlidesContainer.appendChild(firstSlide);
+}
 
 function moveFeaturedSliderToPrevious() {
    featuredSliderIndex -= 1;
    if (featuredSliderIndex < 0) {
-      featuredSliderIndex = MAX_FEATURED_SLIDES - 2;
+      addEndFeaturedSlideAtFront();
+      featuredSliderIndex = 0;
    }
    featuredSlidesContainer.style.transform = `translateX(-${Math.ceil(
       (featuredSliderIndex * (featuredSliderWidth - 24)) / 2
@@ -87,7 +106,8 @@ function moveFeaturedSliderToPrevious() {
 function moveFeaturedSliderToNext() {
    featuredSliderIndex += 1;
    if (featuredSliderIndex > MAX_CAR_SERVICES_SLIDES) {
-      featuredSliderIndex = 0;
+      addFrontFeaturedSlideAtEnd();
+      featuredSliderIndex = MAX_CAR_SERVICES_SLIDES;
    }
    featuredSlidesContainer.style.transform = `translateX(-${Math.ceil(
       (featuredSliderIndex * (featuredSliderWidth - 24)) / 2
@@ -95,13 +115,18 @@ function moveFeaturedSliderToNext() {
 }
 
 function startFeaturedSlider() {
-   featuredPreviousButton.addEventListener(
-      "click",
-      moveFeaturedSliderToPrevious
-   );
-   featuredNextButton.addEventListener("click", moveFeaturedSliderToNext);
+   featuredPreviousButton.addEventListener("click", () => {
+      clearInterval(featuredSliderTimer);
+      featuredSliderTimer = setInterval(moveFeaturedSliderToNext, 5000);
+      moveFeaturedSliderToPrevious();
+   });
+   featuredNextButton.addEventListener("click", () => {
+      clearInterval(featuredSliderTimer);
+      featuredSliderTimer = setInterval(moveFeaturedSliderToNext, 5000);
+      moveFeaturedSliderToNext();
+   });
 
-   setInterval(moveFeaturedSliderToNext, 3000);
+   featuredSliderTimer = setInterval(moveFeaturedSliderToNext, 5000);
 }
 
 startFeaturedSlider();
