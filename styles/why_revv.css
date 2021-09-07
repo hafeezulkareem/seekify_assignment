@@ -1,0 +1,125 @@
+.why-revv-section {
+   margin-top: 64px;
+}
+
+.why-revv.title {
+   font-weight: bold;
+   font-size: 24px;
+}
+
+.why-revv.sub-section {
+   display: flex;
+   margin-top: 24px;
+}
+
+.why-revv.sub-section.two {
+   margin-top: 42px;
+}
+
+.why-revv.card {
+   width: 360px;
+   height: 200px;
+   margin-right: 32px;
+   box-shadow: black 0px 5px 5px 1px, rgb(0 0 0 / 12%) 0px 1px 4px;
+   background-size: cover;
+   position: relative;
+   border-radius: 4px;
+   transition: background-image 0.3s ease-in-out 0s;
+}
+
+.why-revv.overlay {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-radius: 4px;
+}
+
+.why-revv.overlay:hover .why-revv.down-button {
+   display: none;
+}
+
+.why-revv.overlay:hover .why-revv.card-description {
+   display: block;
+}
+
+.why-revv.card-description {
+   display: none;
+   margin-left: 24px;
+   color: white;
+   margin-top: 12px;
+}
+
+.why-revv.card.one {
+   background-image: url("../assets/images/backgrounds/why_revv/1.jpg");
+}
+
+.why-revv.card.one:hover {
+   background-image: url("../assets/images/backgrounds/why_revv/1_hover.jpg");
+}
+
+.why-revv.card.two {
+   background-image: url("../assets/images/backgrounds/why_revv/2.jpg");
+}
+
+.why-revv.card.two:hover {
+   background-image: url("../assets/images/backgrounds/why_revv/2_hover.jpg");
+}
+
+.why-revv.card.three {
+   background-image: url("../assets/images/backgrounds/why_revv/3.jpg");
+}
+
+.why-revv.card.three:hover {
+   background-image: url("../assets/images/backgrounds/why_revv/3_hover.jpg");
+}
+
+.why-revv.card.four {
+   background-image: url("../assets/images/backgrounds/why_revv/4.jpg");
+}
+
+.why-revv.card.four:hover {
+   background-image: url("../assets/images/backgrounds/why_revv/4_hover.jpg");
+}
+
+.why-revv.card.five {
+   background-image: url("../assets/images/backgrounds/why_revv/5.jpg");
+}
+
+.why-revv.card.five:hover {
+   background-image: url("../assets/images/backgrounds/why_revv/5_hover.jpg");
+}
+
+.why-revv.card.six {
+   background-image: url("../assets/images/backgrounds/why_revv/6.jpg");
+}
+
+.why-revv.card.six:hover {
+   background-image: url("../assets/images/backgrounds/why_revv/6_hover.jpg");
+}
+
+.why-revv.card-title {
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+   margin-left: 24px;
+}
+
+.why-revv.down-button {
+   width: 32px;
+   height: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 24px;
+   border: 1px solid white;
+   border-radius: 100%;
+   margin-top: 12px;
+   margin-left: 24px;
+}
