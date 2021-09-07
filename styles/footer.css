@@ -1,0 +1,108 @@
+.footer-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(60, 65, 78, 0.93);
+   padding: 24px 0;
+   margin-top: 24px;
+}
+
+.footer.logo {
+   width: 100px;
+   height: 72px;
+}
+
+.inner-footer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer.social-links-container {
+   display: flex;
+   margin-top: 16px;
+}
+
+.footer.social-link {
+   width: 42px;
+   height: 42px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 24px;
+   border-radius: 100%;
+   background-color: var(--button-hover-color);
+   margin-right: 8px;
+}
+
+.footer.social-link:last-child {
+   margin-right: 0;
+}
+
+.footer.social-link:hover {
+   color: white;
+}
+
+.copyright {
+   color: white;
+   margin-top: 32px;
+   font-size: 14px;
+}
+
+.footer.page-links {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer.page-link {
+   color: white;
+   margin-top: 12px;
+}
+
+.footer.page-link:hover {
+   color: var(--button-hover-color);
+}
+
+.footer.page-link:first-child {
+   margin-top: 0;
+}
+
+.footer.contact-information {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer.label-title {
+   font-size: 24px;
+   font-weight: bold;
+   color: white;
+}
+
+.footer.label-description {
+   font-size: 20px;
+   color: white;
+   margin-top: 8px;
+}
+
+.footer.contact-us-button {
+   width: fit-content;
+   padding: 0;
+   color: var(--button-hover-color);
+   font-size: 22px;
+   margin-top: 16px;
+}
+
+.footer.contact-us-button:hover {
+   text-decoration: underline;
+}
+
+.footer.phone-number,
+.footer.mail-address {
+   color: var(--button-hover-color);
+   font-size: 18px;
+   margin-top: 12px;
+}
+
+.footer.mail-address:hover {
+   text-decoration: underline;
+}
