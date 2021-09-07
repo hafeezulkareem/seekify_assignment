@@ -1,0 +1,18 @@
+.newspapers-section {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 32px;
+}
+
+.newspaper-container {
+   width: 162px;
+}
+
+.newspaper-container img {
+   border-radius: 12px;
+   width: 100%;
+}
+
+.newspaper-container img:hover {
+   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
